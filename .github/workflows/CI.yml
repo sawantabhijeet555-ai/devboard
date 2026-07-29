@@ -25,6 +25,7 @@ jobs:
 
       - name: Run ESLint
         run: npm run lint 
+        working-directory: ./frontend
         
   buils-and-push:
     runs-on: ubuntu-latest
