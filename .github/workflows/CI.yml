@@ -27,7 +27,8 @@ jobs:
         uses: wearerequired/lint-action@v3
         with:
           eslint: true
-          prettier: true
+        # Force the action to use your project's npm run script
+          eslint_command: "npm run lint --" 
         
   buils-and-push:
     runs-on: ubuntu-latest
