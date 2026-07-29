@@ -28,7 +28,7 @@ jobs:
         with:
           eslint: true
         # Force the action to use your project's npm run script
-          eslint_command: "npm run lint --" 
+          eslint_command: "npx --yes eslint@9.12.0" 
         
   buils-and-push:
     runs-on: ubuntu-latest
